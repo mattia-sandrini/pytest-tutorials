@@ -3,6 +3,7 @@ class WeatherService:
         # Some unpredictable result (live weather)
         pass
 
+
 class Forecaster:
     def __init__(self):
         # Now I can't injec a mock into the constructor!
@@ -10,9 +11,5 @@ class Forecaster:
 
     def forecast(self):
         reading = self.weather_service.barometer()
-        forecasts = dict(
-            rising='Going to rain',
-            falling='Looks clear'
-        )
+        forecasts = dict(rising="Going to rain", falling="Looks clear")
         return forecasts[reading]
-
