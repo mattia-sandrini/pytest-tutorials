@@ -8,4 +8,4 @@ def test_list():
 
 
 def test_string():
-    assert 'unitest' == 'unittest'
+    assert "unitest" == "unittest"

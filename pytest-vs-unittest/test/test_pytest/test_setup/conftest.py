@@ -10,7 +10,7 @@ def session():
     s.close()
 
 
-@pytest.fixture(scope='session', autouse=True)
+@pytest.fixture(scope="session", autouse=True)
 def connection():
     conn = Connection()
     yield conn

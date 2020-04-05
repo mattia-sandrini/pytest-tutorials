@@ -5,6 +5,7 @@ class DB:
     def persist(self):
         pass
 
+
 class Person:
     def __init__(self, name, db):
         self.name = name
