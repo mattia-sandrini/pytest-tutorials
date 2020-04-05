@@ -19,5 +19,5 @@ jobs:
                   git config --global user.email 'sandrinimattia@hotmail.it'
                   git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
                   git checkout `basename $GITHUB_REF`
-                  git commit -am "Automated changes"
+                  git commit -am "Automated changes from action 'auto-format'"
                   git push origin HEAD:`basename $GITHUB_REF`
