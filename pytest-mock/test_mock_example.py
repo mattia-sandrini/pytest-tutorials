@@ -24,3 +24,9 @@ def test_any_call(mock_db):
     mock_db.persist(2)
     mock_db.persist.assert_any_call(1)
     # Passes
+
+def test_any_call_failure(mock_db):
+    mock_db.persist(1)
+    mock_db.persist(2)
+    mock_db.persist.assert_any_call(3)
+    # Fails
